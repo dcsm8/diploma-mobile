@@ -3,7 +3,7 @@ import CookieManager from 'react-native-cookies';
 import { NavigationActions } from 'react-navigation';
 import TokenActions from '../Redux/TokenRedux';
 
-const HOME_URL = 'http://192.168.0.6:3005/';
+const HOME_URL = 'http://192.168.0.19:3005/';
 
 function getCookie(cookie, name) {
   let decodedCookie = decodeURIComponent(cookie[name]);

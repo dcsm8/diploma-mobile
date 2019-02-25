@@ -26,9 +26,15 @@ class CertificateScreen extends Component {
     visible: false,
   };
 
-  showModal = () => this.setState({ visible: true });
+  showModal = () =>
+    this.setState({
+      visible: true,
+    });
 
-  hideModal = () => this.setState({ visible: false });
+  hideModal = () =>
+    this.setState({
+      visible: false,
+    });
 
   goBack = () => {
     this.props.navigation.navigate('HomeScreen');
@@ -54,7 +60,10 @@ class CertificateScreen extends Component {
     }; */
     const uri = `https://ipfs.io/ipfs/${certificate.ipfsUrl}`;
 
-    const source = { uri, cache: true };
+    const source = {
+      uri,
+      cache: true,
+    };
     return (
       <View style={styles.container}>
         <Appbar.Header>

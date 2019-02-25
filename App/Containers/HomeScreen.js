@@ -38,11 +38,11 @@ class HomeScreen extends Component {
  *
  */
   getDiplomaDescriptions = async () => {
-    const diplomaList = await axios.get('http://192.168.0.6:3005/api/Diploma', {
+    const diplomaList = await axios.get('http://192.168.0.19:3005/api/Diploma', {
       withCredentials: true,
     });
 
-    const programList = await axios.get(`http://192.168.0.6:3005/api/Program`, {
+    const programList = await axios.get(`http://192.168.0.19:3005/api/Program`, {
       withCredentials: true,
     });
 

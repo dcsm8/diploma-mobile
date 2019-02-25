@@ -9,8 +9,8 @@ import styles from './Styles/AuthScreenStyle';
 // Add Actions - replace 'Your' with whatever your reducer is called :)
 // import YourActions from '../Redux/YourRedux'
 
-const LOGIN_URL = 'http://192.168.0.6:3005/auth/github/';
-const REDIRECT_URL = 'http://192.168.0.6:3005/explorer/';
+const LOGIN_URL = 'http://192.168.0.19:3005/auth/github/';
+const REDIRECT_URL = 'http://192.168.0.19:3005/explorer/';
 
 class AuthScreen extends Component {
   onNavigationStateChange = navState => {

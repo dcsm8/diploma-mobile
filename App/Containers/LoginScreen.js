@@ -13,9 +13,9 @@ import styles from './Styles/LoginScreenStyle';
 
 class LoginScreen extends Component {
   componentDidMount = () => {
-    CookieManager.clearAll().then(res => {
-      console.log('CookieManager.clearAll =>', res);
-    });
+    // CookieManager.clearAll().then(res => {
+    //   console.log('CookieManager.clearAll =>', res);
+    // });
   };
 
   onButtonPressed = () => {
@@ -29,14 +29,23 @@ class LoginScreen extends Component {
   render() {
     return (
       <View style={[styles.mainContainer, styles.login]}>
-        <Headline style={styles.headline}>Solución Blockchain Certificados Académicos</Headline>
-        <Subheading style={styles.subheading}>Facultad Tecnologica - UDFJC</Subheading>
-        <Image style={{ flex: 1, width: null }} resizeMode="contain" source={Images.login} />
+        <Headline style={styles.headline}> Solución Blockchain Certificados Académicos </Headline>
+        <Subheading style={styles.subheading}> Facultad Tecnologica - UDFJC </Subheading>
+        <Image
+          style={{
+            flex: 1,
+            width: null,
+          }}
+          resizeMode="contain"
+          source={Images.login}
+        />
         <Button
           mode="contained"
           onPress={this.openScanner}
           color="#006064"
-          style={{ marginBottom: 30 }}
+          style={{
+            marginBottom: 30,
+          }}
         >
           Escanear código QR
         </Button>

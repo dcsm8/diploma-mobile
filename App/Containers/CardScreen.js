@@ -30,13 +30,13 @@ class CardScreen extends Component {
           console.log('FileChooserManager Error: ', response.error);
         } else {
           axios
-            .get(`http://192.168.0.6:3005/api/wallet`)
+            .get(`http://192.168.0.19:3005/api/wallet`)
             .then(walletsResponse => {
               console.log(walletsResponse);
               if (walletsResponse.data.length === 0) {
                 RNFetchBlob.fetch(
                   'POST',
-                  'http://192.168.0.6:3005/api/wallet/import',
+                  'http://192.168.0.19:3005/api/wallet/import',
                   {
                     withCredentials: 'true',
                     'Content-Type': 'multipart/form-data',
